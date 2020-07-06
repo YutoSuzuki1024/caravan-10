@@ -186,6 +186,7 @@ main{
 	float: left;
 	width: 110px;
 	padding-top: 110px;
+	/*height: 110px;ではダメなのか*/
 	background-size: cover;
 	background-position: center;
 }
@@ -228,4 +229,139 @@ footer {
 
 .footer-text {
 	color: #fff;
+}
+
+/*@media screen and (max-width: 425px) {
+	header {
+		width: 100%;
+	}
+
+	.nav-list-item {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.social {
+		display: none;
+	}
+
+	.main-visual-content {
+		width: 100%;
+	}
+
+	.main-visual-text {
+		font-size: 20px;
+	}
+
+	.main-visual-name {
+		font-size: 20px;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	.blog {
+		width: 100%;
+	}
+
+	.blog-image {
+		width: 45%;
+		margin-left: 10px;
+	}
+
+	.blog-text {
+		width: 45%;
+	}
+
+	.blog-item {
+		padding-bottom: 0;
+	}
+
+	.category {
+		display: none;
+	}
+
+	.pagination {
+		padding: 50px 0;
+	}
+
+	.sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	.sidebar-contents {
+		padding-left: 15px;
+	}
+
+	.instagram-box {
+		width: 45%;
+		padding-top: 45%;
+	}
+
+	.instagram-box:nth-child(odd) {
+		margin: 0 15px 15px 0;
+	}
+
+	.instagram-box:nth-child(even) {
+		margin-bottom: 15px;
+	}
+}*/
+
+
+
+@media screen and (max-width:425px) {
+  header {
+    width: 100%;
+  }
+  .nav-list {
+    width: 100%;
+  }
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .social {
+    display: none;
+  }
+  .main-visual-content {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .blog-image {
+    width: 49%;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  /*予想→.sidebarにおいてpaddingで計6%分内側に余白があるため、widthは実質94%になっているが、
+  この94%を100として、.instagram-boxはそのうちの何％使うか指定しているということ？*/
+  .sidebar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .pagination { 
+    margin-bottom: 50px;
+  }
 }
